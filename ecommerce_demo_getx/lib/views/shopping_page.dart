@@ -11,17 +11,33 @@ class ShoppingPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.teal,
-      floatingActionButton: FloatingActionButton(
+      floatingActionButton: FloatingActionButton.extended(
         onPressed: () {},
-        child: GetX<CartController>(builder: (controller) {
+        icon: Icon(
+          Icons.add_shopping_cart_outlined,
+          color: Colors.black,
+        ),
+        label: GetX<CartController>(builder: (controller) {
           return Text(
             "${controller.count}",
             style: TextStyle(
-              fontSize: 15,
+              fontSize: 20,
+              color: Colors.black,
             ),
           );
         }),
       ),
+      //FloatingActionButton(
+      //  onPressed: () {},
+      //  child: GetX<CartController>(builder: (controller) {
+      //    return Text(
+      //      "${controller.count}",
+      //      style: TextStyle(
+      //        fontSize: 15,
+      //      ),
+      //    );
+      //  }),
+      //),
       body: SafeArea(
         child: Column(
           children: [
