@@ -3,40 +3,21 @@ import 'package:get/get.dart';
 
 import 'navigation_test.dart';
 
-class HomeScreenGet extends StatefulWidget {
-  const HomeScreenGet({super.key});
+class LightDarkTest extends StatefulWidget {
+  const LightDarkTest({super.key});
 
   @override
-  State<HomeScreenGet> createState() => _HomeScreenGetState();
+  State<LightDarkTest> createState() => _LightDarkTestState();
 }
 
-class _HomeScreenGetState extends State<HomeScreenGet> {
+class _LightDarkTestState extends State<LightDarkTest> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('GetX Practise'),
+        title: Text('Light-Dark Theme'),
         centerTitle: true,
       ),
-      drawer: Drawer(
-          child: Column(
-        children: [
-          ListTile(
-            leading: Icon(Icons.light_mode),
-            title: Text('Light Theme'),
-            onTap: () {
-              Get.changeTheme(ThemeData.light());
-            },
-          ),
-          ListTile(
-            leading: Icon(Icons.dark_mode),
-            title: Text('Dark Theme'),
-            onTap: () {
-              Get.changeTheme(ThemeData.dark());
-            },
-          ),
-        ],
-      )),
       body: Column(
         children: [
           Padding(
@@ -122,9 +103,8 @@ class _HomeScreenGetState extends State<HomeScreenGet> {
           Get.snackbar(
             "title",
             "Welcome",
-            backgroundColor: Colors.blue,
+            backgroundColor: const Color.fromARGB(255, 247, 247, 138),
             snackPosition: SnackPosition.BOTTOM,
-            progressIndicatorBackgroundColor: Colors.red,
             showProgressIndicator: true,
           );
         },
