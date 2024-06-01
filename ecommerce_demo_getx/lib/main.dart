@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'tech_brothers/home_screen_test.dart';
+import 'tech_brothers/height_width/height_width_test.dart';
 import 'tech_brothers/screens/first_screen.dart';
 import 'tech_brothers/screens/second_screen.dart';
 
@@ -18,11 +18,11 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       //theme: ThemeData(brightness: Brightness.dark),
       debugShowCheckedModeBanner: false,
-      home: HomeScreenGet(),
+      //home: HeightWidthTest(),
       getPages: [
         GetPage(
           name: '/',
-          page: () => HomeScreenGet(),
+          page: () => HeightWidthTest(),
         ),
         GetPage(
           name: '/firstScreen',
