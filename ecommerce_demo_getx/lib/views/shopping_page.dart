@@ -59,6 +59,8 @@ class ShoppingPage extends StatelessWidget {
                                 children: [
                                   Column(
                                     mainAxisAlignment: MainAxisAlignment.start,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
                                     children: [
                                       Text(
                                           "${controller.products[index].productName}"),
@@ -70,12 +72,29 @@ class ShoppingPage extends StatelessWidget {
                                       "Tk ${controller.products[index].price}"),
                                 ],
                               ),
-                              ElevatedButton(
-                                onPressed: () {
-                                  cartController
-                                      .addToCart(controller.products[index]);
-                                },
-                                child: Text("Add To Cart"),
+                              SizedBox(
+                                height: 10.0,
+                              ),
+                              Row(
+                                children: [
+                                  ElevatedButton(
+                                    onPressed: () {
+                                      cartController.addToCart(
+                                          controller.products[index]);
+                                    },
+                                    child: Icon(Icons.add),
+                                  ),
+                                  SizedBox(
+                                    width: 10.0,
+                                  ),
+                                  ElevatedButton(
+                                    onPressed: () {
+                                      cartController.deleteProduct(
+                                          controller.products[index]);
+                                    },
+                                    child: Icon(Icons.remove),
+                                  ),
+                                ],
                               ),
                             ],
                           ),
