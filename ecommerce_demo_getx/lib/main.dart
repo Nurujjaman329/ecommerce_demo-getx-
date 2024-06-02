@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'tech_brothers/height_width/height_width_test.dart';
+import 'tech_brothers/language_test/language_test.dart';
 import 'tech_brothers/screens/first_screen.dart';
 import 'tech_brothers/screens/second_screen.dart';
 
@@ -18,6 +19,9 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       //theme: ThemeData(brightness: Brightness.dark),
       debugShowCheckedModeBanner: false,
+      //locale: Locale('en', 'US'),
+      fallbackLocale: Locale('bn', 'BN'),
+      translations: Language(),
       //home: HeightWidthTest(),
       getPages: [
         GetPage(
