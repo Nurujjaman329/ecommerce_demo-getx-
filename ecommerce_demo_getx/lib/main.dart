@@ -2,6 +2,7 @@ import 'package:ecommerce_demo_getx/tech_brothers/slider_test/opacity_slider_tes
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import 'tech_brothers/api_get_put_delete/api_get_put_delete.dart';
 import 'tech_brothers/counter_test/counter_screen.dart';
 import 'tech_brothers/favourite_app/favourite_test.dart';
 import 'tech_brothers/home_screen_test.dart';
@@ -65,6 +66,10 @@ class MyApp extends StatelessWidget {
         GetPage(
           name: '/imagepickerScreen',
           page: () => const ImagePickerTest(),
+        ),
+        GetPage(
+          name: '/apitestScreen',
+          page: () => const ApiTest(),
         ),
       ],
     );

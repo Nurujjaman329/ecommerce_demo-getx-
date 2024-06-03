@@ -75,6 +75,13 @@ class _HomeScreenGetState extends State<HomeScreenGet> {
                 Get.toNamed('/imagepickerScreen');
               },
             ),
+            ListTile(
+              leading: Icon(Icons.api),
+              title: Text('Api Test'),
+              onTap: () {
+                Get.toNamed('/apitestScreen');
+              },
+            ),
           ],
         ),
       ),
