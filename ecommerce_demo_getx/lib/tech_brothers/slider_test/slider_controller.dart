@@ -5,5 +5,6 @@ class SliderController extends GetxController {
 
   setOpacity(double value) {
     opacity.value = value;
+    print(opacity.value);
   }
 }

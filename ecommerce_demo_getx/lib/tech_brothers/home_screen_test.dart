@@ -54,6 +54,13 @@ class _HomeScreenGetState extends State<HomeScreenGet> {
                 Get.toNamed('/opacityScreen');
               },
             ),
+            ListTile(
+              leading: Icon(Icons.switch_access_shortcut),
+              title: Text('Switch Screen'),
+              onTap: () {
+                Get.toNamed('/switchScreen');
+              },
+            ),
           ],
         ),
       ),

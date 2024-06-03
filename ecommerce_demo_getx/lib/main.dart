@@ -8,6 +8,7 @@ import 'tech_brothers/language_test/language_screen.dart';
 import 'tech_brothers/language_test/language_test.dart';
 import 'tech_brothers/screens/first_screen.dart';
 import 'tech_brothers/screens/second_screen.dart';
+import 'tech_brothers/switch_test/switch_test.dart';
 
 void main() {
   runApp(const MyApp());
@@ -50,6 +51,10 @@ class MyApp extends StatelessWidget {
         GetPage(
           name: '/opacityScreen',
           page: () => OpacitySlider(),
+        ),
+        GetPage(
+          name: '/switchScreen',
+          page: () => SwitchTest(),
         ),
       ],
     );

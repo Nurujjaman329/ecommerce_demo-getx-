@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class OpacitySlider extends StatefulWidget {
-  const OpacitySlider({super.key});
+  OpacitySlider({super.key});
 
   @override
   State<OpacitySlider> createState() => _OpacitySliderState();
