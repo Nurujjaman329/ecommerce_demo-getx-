@@ -40,6 +40,13 @@ class _HomeScreenGetState extends State<HomeScreenGet> {
               Get.toNamed('/lanScreen');
             },
           ),
+          ListTile(
+            leading: Icon(Icons.countertops),
+            title: Text('Count_Screen'),
+            onTap: () {
+              Get.toNamed('/countScreen');
+            },
+          ),
         ],
       )),
       body: Column(

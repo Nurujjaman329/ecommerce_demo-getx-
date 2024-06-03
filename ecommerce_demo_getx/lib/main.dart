@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import 'tech_brothers/counter_test/counter_screen.dart';
 import 'tech_brothers/home_screen_test.dart';
 import 'tech_brothers/language_test/language_screen.dart';
 import 'tech_brothers/language_test/language_test.dart';
@@ -40,6 +41,10 @@ class MyApp extends StatelessWidget {
         GetPage(
           name: '/lanScreen',
           page: () => Language_Screen(),
+        ),
+        GetPage(
+          name: '/countScreen',
+          page: () => CounterScreen(),
         ),
       ],
     );
