@@ -61,6 +61,13 @@ class _HomeScreenGetState extends State<HomeScreenGet> {
                 Get.toNamed('/switchScreen');
               },
             ),
+            ListTile(
+              leading: Icon(Icons.favorite),
+              title: Text('Favourite Screen'),
+              onTap: () {
+                Get.toNamed('/favScreen');
+              },
+            ),
           ],
         ),
       ),
