@@ -4,6 +4,7 @@ class Language extends Translations {
   @override
   // TODO: implement keys
   Map<String, Map<String, String>> get keys => {
-        "en_US": {'message': 'What is Your Name', 'name': 'Nurujjaman'}
+        "en_US": {'message': 'What is Your Name', 'name': 'Nurujjaman'},
+        "bn_BN": {'message': 'আপনার নাম কি', 'name': 'নুরুজ্জামান'},
       };
 }

@@ -33,6 +33,13 @@ class _HomeScreenGetState extends State<HomeScreenGet> {
               Get.changeTheme(ThemeData.dark());
             },
           ),
+          ListTile(
+            leading: Icon(Icons.language),
+            title: Text('Change Language'),
+            onTap: () {
+              Get.toNamed('/lanScreen');
+            },
+          ),
         ],
       )),
       body: Column(
