@@ -24,6 +24,7 @@ class _FavouriteTestScreenState extends State<FavouriteTestScreen> {
           return Obx(
             () => Card(
               child: ListTile(
+                //hoverColor: Colors.grey,
                 onTap: () {
                   if (controller.tempFruits
                       .contains(controller.fruits[index].toString())) {

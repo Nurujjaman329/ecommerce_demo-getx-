@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 import 'tech_brothers/counter_test/counter_screen.dart';
 import 'tech_brothers/favourite_app/favourite_test.dart';
 import 'tech_brothers/home_screen_test.dart';
+import 'tech_brothers/image_test/image_test_getx.dart';
 import 'tech_brothers/language_test/language_screen.dart';
 import 'tech_brothers/language_test/language_test.dart';
 import 'tech_brothers/screens/first_screen.dart';
@@ -60,6 +61,10 @@ class MyApp extends StatelessWidget {
         GetPage(
           name: '/favScreen',
           page: () => const FavouriteTestScreen(),
+        ),
+        GetPage(
+          name: '/imagepickerScreen',
+          page: () => const ImagePickerTest(),
         ),
       ],
     );

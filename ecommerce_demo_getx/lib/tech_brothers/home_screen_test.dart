@@ -68,6 +68,13 @@ class _HomeScreenGetState extends State<HomeScreenGet> {
                 Get.toNamed('/favScreen');
               },
             ),
+            ListTile(
+              leading: Icon(Icons.image_aspect_ratio),
+              title: Text('Image-Picker Screen'),
+              onTap: () {
+                Get.toNamed('/imagepickerScreen');
+              },
+            ),
           ],
         ),
       ),
