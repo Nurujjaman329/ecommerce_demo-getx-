@@ -1,3 +1,4 @@
+import 'package:ecommerce_demo_getx/tech_brothers/slider_test/opacity_slider_test.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -45,6 +46,10 @@ class MyApp extends StatelessWidget {
         GetPage(
           name: '/countScreen',
           page: () => CounterScreen(),
+        ),
+        GetPage(
+          name: '/opacityScreen',
+          page: () => OpacitySlider(),
         ),
       ],
     );

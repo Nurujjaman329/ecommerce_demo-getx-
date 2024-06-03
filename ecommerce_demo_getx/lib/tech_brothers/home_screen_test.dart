@@ -17,38 +17,46 @@ class _HomeScreenGetState extends State<HomeScreenGet> {
         centerTitle: true,
       ),
       drawer: Drawer(
-          child: Column(
-        children: [
-          ListTile(
-            leading: Icon(Icons.light_mode),
-            title: Text('Light Theme'),
-            onTap: () {
-              Get.changeTheme(ThemeData.light());
-            },
-          ),
-          ListTile(
-            leading: Icon(Icons.dark_mode),
-            title: Text('Dark Theme'),
-            onTap: () {
-              Get.changeTheme(ThemeData.dark());
-            },
-          ),
-          ListTile(
-            leading: Icon(Icons.language),
-            title: Text('Change Language'),
-            onTap: () {
-              Get.toNamed('/lanScreen');
-            },
-          ),
-          ListTile(
-            leading: Icon(Icons.countertops),
-            title: Text('Count_Screen'),
-            onTap: () {
-              Get.toNamed('/countScreen');
-            },
-          ),
-        ],
-      )),
+        child: Column(
+          children: [
+            ListTile(
+              leading: Icon(Icons.light_mode),
+              title: Text('Light Theme'),
+              onTap: () {
+                Get.changeTheme(ThemeData.light());
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.dark_mode),
+              title: Text('Dark Theme'),
+              onTap: () {
+                Get.changeTheme(ThemeData.dark());
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.language),
+              title: Text('Change Language'),
+              onTap: () {
+                Get.toNamed('/lanScreen');
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.countertops),
+              title: Text('Count_Screen'),
+              onTap: () {
+                Get.toNamed('/countScreen');
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.opacity),
+              title: Text('Opacity Screen'),
+              onTap: () {
+                Get.toNamed('/opacityScreen');
+              },
+            ),
+          ],
+        ),
+      ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
