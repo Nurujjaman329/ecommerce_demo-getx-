@@ -76,8 +76,8 @@ class _HomeScreenGetState extends State<HomeScreenGet> {
               },
             ),
             ListTile(
-              leading: Icon(Icons.api),
-              title: Text('Api Test'),
+              leading: const Icon(Icons.api),
+              title: const Text('Api Test'),
               onTap: () {
                 Get.toNamed('/apitestScreen');
               },
